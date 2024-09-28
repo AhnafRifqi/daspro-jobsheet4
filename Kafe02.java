@@ -50,15 +50,15 @@ public class Kafe02 {
                 price *= lSizeMultiplier;
                 break;
             default:
-                System.out.println("Invalid size.");
+                System.out.println("Size is not available");
                 return;
         }
 
         if (isMember.equals("yes")) {
             price *= (1 - memberDiscount);
         }
-
-        System.out.println("Total price: Rp " + price);
+        
+        System.out.println("Total price: " + price);
 
     }
 }
